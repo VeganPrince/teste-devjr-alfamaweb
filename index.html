@@ -1,16 +1,411 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>AlfamaWeb</title>
 </head>
 
-<body>
+<body class="d-flex flex-column gap-5">
+    <div class="presentation col-12 col-md-6 w-100">
+        <div class="header d-flex justify-content-around py-3">
+            <img src="./assets/images/alfama-logo.png" alt="logo alfama" class="logo">
+            <div class="navlink d-flex justify-content-around gap-2">
+                <ul class="nav text-light list-unstyled d-flex align-items-center justify-content-between gap-3">
+                    <li class="nav-item">
+                        Precatórios?
+                    </li>
+                    <li class="nav-item">
+                        A empresa
+                    </li>
+                    <li class="nav-item">
+                        Como funciona?
+                    </li>
+                    <li class="nav-item">
+                        FAQ
+                    </li>
+                    <li class="nav-item">
+                        Depoimentos
+                    </li>
+                </ul>
+                <button class="btn-telephone btn d-flex rounded-pill d-flex gap-2">
+                    <i class="bi bi-telephone"></i>
+                    <div>(00) 0000-0000</div>
+                </button>
+            </div>
+        </div>
 
+        <div class="presentation-content d-flex justify-content-center px-5">
+            <div class="d-flex flex-column justify-content-center">
+                <div class="text-white">
+                    <div class="text-first fs-3 w-75 ms-5">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Nesciunt ea
+                            exercitationem rerum assumenda impedit aut</b>
+                    </div>
+                </div>
+                <div class="d-flex text-white">
+                    <div class="text-second w-75 ms-5">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique odit vel perspiciatis,
+                        veritatis maxime adipisci sed.
+                    </div>
+                    <img src="./assets/images/idosos.png" alt="foto de casal de idosos"
+                        class="idosos align-self-center img-fluid">
+                </div>
+            </div>
+            <div
+                class="form-content bg-white h-auto rounded-4 px-4 py-3 my-auto mx-auto d-flex flex-column justify-content-center align-items-center">
+                <form id="meuForm" action="" class="">
+                    <div class="fw-bold fs-4 w-100">Precisa de nossa ajuda?</div>
+                    <div class="text-muted w-100">Preencha o formulário abaixo e fale conosco</div>
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">@</span>
+                            <input name="nome" type="text" class="form-control bg-transparent border-0"
+                                placeholder="Nome" aria-label="nome" aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">@</span>
+                            <input type="text" name="uf" class="form-control bg-transparent border-0"
+                                placeholder="Estado/UF" aria-label="unidade federativa"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">@</span>
+                            <input type="text" name="telefone" class="form-control bg-transparent border-0"
+                                placeholder="Telefone" aria-label="telefone" aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">@</span>
+                            <input type="text" name="email" class="form-control bg-transparent border-0"
+                                placeholder="E-mail" aria-label="email" aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">@</span>
+                            <input type="text" name="valor" class="form-control bg-transparent border-0"
+                                placeholder="Valor do precatório" aria-label="nome" aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="input-group flex-nowrap">
+                            <input type="text" name="processo" class="form-control bg-transparent border-0"
+                                placeholder="Número do processo" aria-label="numero do processo"
+                                aria-describedby="addon-wrapping">
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="confirmacao">
+                            <label class="form-check-label" for="confirmacao">
+                                Aceito a política de privacidade
+                            </label>
+                        </div>
+                        <button class="button-submit btn w-100 rounded-pill" type="submit">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+                <div id="response" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-presentation d-flex flex-column justify-content-center align-items-center gap-5">
+        <h3 class="fw-bold mb-5">Lorem ipsum dolor sit amet <span class="text-primary">consectetur</span></h3>
+        <div class="d-flex bg-white rounded-5 shadow-lg w-75 gap-3">
+            <div class=" d-flex flex-column justify-content-center px-4 gap-3">
+                <div class="text-primary h4 fw-bold">Quem Somos?</div>
+                <div class="d-flex flex-column gap-3">
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae
+                        euismod
+                        metus. In aliquam, urna posuere egestas dignissim, nulla dolor.
+                    </div>
+
+                    <div>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae euismod metus. In aliquam, urna
+                        posuere egestas dignissim, nulla dolor pretium risus, ac imperdiet erat erat quis nibh. Quisque
+                        viverra volutpat eros vitae vehicula. Pellentesque tincidunt, lacus eu tincidunt finibus. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae euismod
+                        metus.
+                        Pellentesque tincidunt, lacus eu tincidunt finibus.
+                    </div>
+                </div>
+            </div>
+            <img class="rounded-5 idosos" src="./assets/images/idososII.png" alt="casal de idosos">
+        </div>
+
+        <div class="d-flex w-75 bg-white shadow-lg rounded-5">
+            <img class="idosa-celular" src="./assets/images/idosa.png" alt="idosa ao celular">
+            <div class="d-flex flex-column gap-3 p-3 align-items-center justify-content-center">
+                <div class="text-primary fw-bold">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui.
+                </div>
+                <div class="">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae euismod
+                    metus. In aliquam, urna posuere egestas dignissim, nulla dolor pretium risus, ac imperdiet erat erat
+                    quis nibh. Quisque viverra volutpat eros vitae vehicula. Pellentesque tincidunt, lacus eu tincidunt
+                    finibus, tellus quam dapibus quam, nec lacinia nunc nulla nec lectus. Nulla eleifend enim at justo
+                    tristique, vulputate convallis turpis vestibulum. Nunc eget magna non velit aliquet imperdiet quis
+                    egestas leo.
+                    Pellentesque tincidunt, lacus eu tincidunt finibus, tellus quam dapibus quam, nec lacinia nunc nulla
+                    nec lectus. Nulla eleifend enim at justo tristique, vulputate convallis turpis vestibulum. Nunc eget
+                    magna non velit aliquet imperdiet quis egestas leo.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="how-it-works d-flex flex-column align-items-center justify-content-center gap-3 px-5">
+        <div class="fw-bold h3 ">Como funciona?</div>
+        <div class="steps d-flex flex-column align-items-center justify-content-center gap-5">
+
+            <div class="d-flex justify-content-between gap-3 px-5">
+                <div class="d-flex flex-column align-items-center p-2">
+                    <div class="step-badge w-50 rounded-5 text-white fw-bold p-2 align-self-start">Passo 1: Lorem</div>
+                    <p class=" bg-white rounded-5 shadow-lg p-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, illo. Mollitia dolores
+                        temporibus.
+                    </p>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div class="step-badge w-50 rounded-5 text-white fw-bold p-2 align-self-start">Passo 2: Lorem</div>
+                    <p class=" bg-white rounded-5 shadow-lg p-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, illo. Mollitia dolores
+                        temporibus.
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between gap-3 px-5">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="step-badge w-50 rounded-5 text-white fw-bold p-2 align-self-start">Passo 3: Lorem</div>
+                    <p class=" bg-white rounded-5 shadow-lg p-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, illo. Mollitia dolores
+                        temporibus.
+                    </p>
+                </div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <div class="step-badge w-50 rounded-5 text-white fw-bold p-2 align-self-start">Passo 4: Lorem</div>
+                    <p class=" bg-white rounded-5 shadow-lg p-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, illo. Mollitia dolores
+                        temporibus.
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="step-badge w-25 rounded-5 text-white fw-bold p-2 align-self-start">Passo 5: Lorem</div>
+                    <p class="bg-white rounded-5 shadow-lg p-3">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, illo. Mollitia dolores
+                        temporibus.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="this-enterprise w-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="fw-bold h1 mb-5">Por que escolher <span class="text-primary">Esta empresa?</span></div>
+        <div class="d-flex justify-content-center gap-5 w-100">
+            <img class="jovem-social rounded-5" src="./assets/images/jovem-social.png" alt="jovem com traje social">
+            <div class="card-container d-flex flex-column justify-content-evenly">
+                <div class="card d-flex flex-row align-items-center gap-4 rounded-4 border-0 shadow-lg p-4">
+                    <img class="icon" src="./assets/images/like-icon.png" alt="ícone de legal">
+                    <div class="d-flex flex-column">
+                        <div class="fw-bold">Lorem ipsum</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+
+                <div class="card d-flex flex-row align-items-center gap-4 rounded-4 border-0 shadow-lg p-4">
+                    <img class="icon" src="./assets/images/cadeado-icon.png" alt="icone de cadeado">
+                    <div class="d-flex flex-column">
+                        <div class="fw-bold">Lorem ipsum</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+
+                <div class="card d-flex flex-row align-items-center gap-4 rounded-4 border-0 shadow-lg p-4">
+                    <img class="icon" src="./assets/images/valor-icon.png" alt="icone representando valor">
+                    <div class="d-flex flex-column">
+                        <div class="fw-bold">Lorem ipsum</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+
+                <div class="card d-flex flex-row align-items-center gap-4 rounded-4 border-0 shadow-lg p-4">
+                    <img class="icon" src="./assets/images/agilidade-icon.png" alt="icone de agilidade">
+                    <div class="d-flex flex-column">
+                        <div class="fw-bold">Lorem ipsum</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="doubts d-flex flex-column justify-content-center align-items-center">
+        <div class="fw-bold h2 mb-5">
+            <span class="text-primary">Dúvidas</span> e perguntas <span class="text-primary">frequentes</span>
+        </div>
+
+        <div class="px-5">
+            <div class="d-flex justify-content-center gap-4 px-5 mb-3">
+                <div class="card shadow-lg p-3 d-flex flex-column gap-2">
+                    <div class="d-flex align-items-center justify-content-between ">
+                        <div class="fw-bold">
+                            Lorem ipsum dolor sit amet, consectetur a
+                            dipiscing elit.
+                        </div>
+                        <div class="px-2 py-1 circle seta-container">
+                            <img class="seta" src="./assets/images/seta-cima.png" alt="seta para cima">
+                        </div>
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae
+                        euismod metus. In aliquam, urna posuere egestas dignissim, nulla dolor pretium risus, ac
+                        imperdiet erat erat quis nibh. 
+                    </div>
+                </div>
+
+                <div class="card shadow-lg p-3 p-3 d-flex flex-column gap-2">
+                    <div class="d-flex align-items-center justify-content-between ">
+                        <div class="fw-bold">
+                            Lorem ipsum dolor sit amet, consectetur a
+                            dipiscing elit.
+                        </div>
+                        <div class="px-2 py-1 circle seta-container">
+                            <img class="seta" src="./assets/images/seta-cima.png" alt="seta para cima">
+                        </div>
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae
+                        euismod metus. In aliquam, urna posuere egestas dignissim, nulla dolor pretium risus, ac
+                        imperdiet erat erat quis nibh. 
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column px-5 gap-4">
+
+                <div class="d-flex gap-4">
+                    <div class="card shadow-lg d-flex flex-row p-3 gap-2 align-items-center border-0">
+                        <div class="fw-bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae
+                            euismod metus.
+                        </div>
+                        <div class="seta-container-outline px-2 py-1">
+                            <img class="seta" src="./assets/images/seta-baixo.png" alt="seta para baixo">
+                        </div>
+                    </div>
+
+                    <div class="card shadow-lg d-flex flex-row p-3 gap-2 align-items-center border-0">
+                        <div class="fw-bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae
+                            euismod metus.
+                        </div>
+                        <div class="seta-container-outline px-2 py-1">
+                            <img class="seta" src="./assets/images/seta-baixo.png" alt="seta para baixo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-4">
+                    <div class="card shadow-lg d-flex flex-row p-3 gap-2 align-items-center border-0">
+                        <div class="fw-bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae
+                            euismod metus.
+                        </div>
+                        <div class="seta-container-outline px-2 py-1">
+                            <img class="seta" src="./assets/images/seta-baixo.png" alt="seta para baixo">
+                        </div>
+                    </div>
+
+                    <div class="card shadow-lg d-flex flex-row p-3 gap-2 align-items-center border-0">
+                        <div class="fw-bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula enim dui. Cras vitae
+                            euismod metus.
+                        </div>
+                        <div class="seta-container-outline px-2 py-1">
+                            <img class="seta" src="./assets/images/seta-baixo.png" alt="seta para baixo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer text-white">
+        <div class="footer-info d-flex justify-content-center px-5 py-3">
+            <div class="d-flex flex-column  align-items-center fs-6">
+                <img class="logo-md" src="./assets/images/alfama-logo.png" alt="logo">
+                <div>CNPJ: 00.000.000/0000-00</div>
+            </div>
+
+            <div class="footer-infos d-flex justify-content-center">
+                <div class="d-flex flex-column">
+                    <p class="fw-bold">Nosso telefone</p>
+                    <div class="d-flex gap-2 align-items-center fs-6">
+                        <i class="bi bi-telephone"></i>
+                        <div>(00) 00000-0000</div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <p class="fw-bold">Nosso endereço</p>
+                    <div class="d-flex gap-2 align-items-center">
+                        <i class="bi bi-telephone"></i>
+                        <div class="text-justify fs-6">
+                            Lorem ipsum dolor sit amet am, nº 000 – Lorem ipsum dolor – Lorem/XX, CEP: 00.000-000
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <p class="fw-bold">Nosso e-mail</p>
+                    <div class="d-flex gap-2 align-items-center fs-6">
+                        <i class="bi bi-telephone"></i>
+                        <div>contato@contatodeteste.com.br</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright px-5 py-3 d-flex justify-content-between">
+            <div>
+                Copyright © 2024 - Todos os direitos reservados a <span class="fw-bold">Esta Empresa.</span>
+            </div>
+            <div>
+                <img src="./assets/images/alfama-logo-branca.png" alt="logo alfama branca">
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#meuForm').on('submit', function (event) {
+            event.preventDefault($(this).serialize());
+            console.log()
+            $.ajax({
+                url: './mail/mail.php',
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function (response) {
+                    $('#response').html(response);
+                }
+            });
+        });
+    })
+</script>
 
 </html>

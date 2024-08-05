@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.presentation {
+    background-color: #0A3E73 !important;
+    border-radius: 0 0 0 120px;
+}
+
+.logo {
+    width: 198px;
+    height: 33px;
+}
+
+.btn-telephone {
+    background-color: #F6DE6C !important;
+    color: #0A3E73 !important;
+}
+
+.idosos {
+    width: 500px;
+    height: 400px;
+}
+
+.idosa-celular {
+    width: 719px;
+    height: 636px;
+}
+
+.button-submit {
+    color: #494949 !important;
+    background-color: #F6DE6C !important;
+}
+
+.step-badge {
+    background-color: #065C99 !important;
+}
+
+.jovem-social {
+    width: 365px;
+    height: 600px;
+}
+
+.card-container>div>img {
+    width: 59px;
+    height: 59px;
+}
+
+.seta {
+    width: 14px;
+    height: 14px;
+}
+
+.seta-container {
+    background-color: #065C99;
+    border-radius: 50%;
+}
+
+.seta-container-outline {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #0A3E73;
+}
+
+.logo-md {
+    height: 43px;
+    width: 258px;
+}
+
+.footer-info {
+    background-color: #19407E;
+}
+
+.footer-copyright {
+    background-color: #0B2B5F;
+}
+

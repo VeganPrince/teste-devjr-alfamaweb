@@ -17,8 +17,8 @@ try {
     $mail->Port = 2525;
 
     
-    $mail->setFrom('alexandre.dantas0013@gmail.com', 'Alex');
-    $mail->addAddress('joceni406@gmail.com', 'Alexsander');
+    $mail->setFrom('no-reply@seusite.com', 'destinatario');
+    $mail->addAddress('marcelw@alfamaweb.com.br', 'Alexsander');
 
     
     $nome = trim($_POST['nome']);

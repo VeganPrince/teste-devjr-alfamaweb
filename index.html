@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        <div class="presentation-content d-flex justify-content-center px-5">
+        <div class="presentation-content d-flex justify-content-center gap-5 px-5">
             <div class="d-flex flex-column justify-content-center">
                 <div class="text-white">
                     <div class="text-first fs-3 w-75 ms-5">
@@ -67,28 +67,38 @@
                     <div class="text-muted w-100">Preencha o formulário abaixo e fale conosco</div>
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <div class="input-group flex-nowrap">
-                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">@</span>
+                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">
+                                <i class="bi bi-person icon-form"></i>
+                            </span>
                             <input name="nome" type="text" class="form-control bg-transparent border-0"
                                 placeholder="Nome" aria-label="nome" aria-describedby="addon-wrapping">
                         </div>
                         <div class="input-group flex-nowrap">
-                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">@</span>
+                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">
+                                <img src="./assets/images/brasil-icon.png" alt="">
+                            </span>
                             <input type="text" name="uf" class="form-control bg-transparent border-0"
                                 placeholder="Estado/UF" aria-label="unidade federativa"
                                 aria-describedby="addon-wrapping">
                         </div>
                         <div class="input-group flex-nowrap">
-                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">@</span>
+                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">
+                                <i class="bi bi-telephone icon-form"></i>
+                            </span>
                             <input type="text" name="telefone" class="form-control bg-transparent border-0"
                                 placeholder="Telefone" aria-label="telefone" aria-describedby="addon-wrapping">
                         </div>
                         <div class="input-group flex-nowrap">
-                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">@</span>
+                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">
+                                <i class="bi bi-envelope icon-form"></i>
+                            </span>
                             <input type="text" name="email" class="form-control bg-transparent border-0"
                                 placeholder="E-mail" aria-label="email" aria-describedby="addon-wrapping">
                         </div>
                         <div class="input-group flex-nowrap">
-                            <span class="input-group-text bg-transparent border-0" id="addon-wrapping">@</span>
+                            <span class="input-group-text bg-transparent border-0 icon-form" id="addon-wrapping">
+                                R$
+                            </span>
                             <input type="text" name="valor" class="form-control bg-transparent border-0"
                                 placeholder="Valor do precatório" aria-label="nome" aria-describedby="addon-wrapping">
                         </div>
@@ -345,14 +355,14 @@
     </div>
 
     <div class="footer text-white">
-        <div class="footer-info d-flex justify-content-center px-5 py-3">
+        <div class="footer-info d-flex justify-content-center align-items-center gap-5 px-5 py-3">
             <div class="d-flex flex-column  align-items-center fs-6">
                 <img class="logo-md" src="./assets/images/alfama-logo.png" alt="logo">
                 <div>CNPJ: 00.000.000/0000-00</div>
             </div>
 
-            <div class="footer-infos d-flex justify-content-center">
-                <div class="d-flex flex-column">
+            <div class="footer-infos row d-flex align-items-center">
+                <div class="col">
                     <p class="fw-bold">Nosso telefone</p>
                     <div class="d-flex gap-2 align-items-center fs-6">
                         <i class="bi bi-telephone"></i>
@@ -360,7 +370,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex flex-column">
+                <div class="col">
                     <p class="fw-bold">Nosso endereço</p>
                     <div class="d-flex gap-2 align-items-center">
                         <i class="bi bi-telephone"></i>
@@ -370,7 +380,7 @@
                     </div>
                 </div>
 
-                <div class="d-flex flex-column">
+                <div class="col">
                     <p class="fw-bold">Nosso e-mail</p>
                     <div class="d-flex gap-2 align-items-center fs-6">
                         <i class="bi bi-telephone"></i>
